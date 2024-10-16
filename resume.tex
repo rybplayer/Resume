@@ -1,0 +1,160 @@
+\documentclass[11pt]{article}
+\usepackage[english]{babel}
+\usepackage{cmbright}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{fontawesome5}
+\usepackage{geometry}
+\usepackage{hyperref}
+\usepackage[sf]{libertine}
+\usepackage{microtype}
+\usepackage{paracol}
+\usepackage{supertabular}
+\usepackage{titlesec}
+\usepackage[none]{hyphenat}
+\usepackage{amsmath}
+\hypersetup{colorlinks, urlcolor=black, linkcolor=black}
+
+% Geometry
+\geometry{hmargin=1.5cm, vmargin=2cm}
+\columnratio{0.6, 0.4}
+\setlength\columnsep{0.02\textwidth}
+\setlength\parindent{0pt}
+\setlength{\smallskipamount}{8pt plus 3pt minus 3pt}
+\setlength{\medskipamount}{12pt plus 6pt minus 6pt}
+\setlength{\bigskipamount}{12pt plus 8pt minus 8pt}
+
+% Style
+\pagestyle{empty}
+\titleformat{\section}{\scshape\LARGE\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{\bigskipamount}{\smallskipamount}
+\newcommand{\heading}[2]{\centering{\sffamily\Huge #1}\\\smallskip{\large{#2}}}
+\newcommand{\header}[4]{{{\textbf{#1}}} \hfill #2 \\ #3 \hfill #4}
+\newcommand{\entry}[3]{{{\textbf{#1}}} \hfill #2 \\ #3 \hfill \hspace{0em}}
+\newcommand{\blurb}[2]{{\textbf{#1}} \hfill #2}
+\newcommand{\tableentry}[3]{\textsc{#1} & #2\expandafter\ifstrequal\expandafter{#3}{}{\\}{\\[6pt]}}
+\renewcommand{\>}{\textperiodcentered{}}
+
+\begin{document}
+
+\vspace*{\fill}
+
+\begin{paracol}{2}
+
+% Name & headline
+\heading{Ryan Yeshaya Batubara}{Rising Data Scientist with advanced \\Computer Science and Mathematics background.}
+
+\switchcolumn
+
+% Identity card
+\begin{supertabular}{ll}
+    \footnotesize\faEnvelope & \href{mailto:ryan.y.batubara@gmail.com}{ryan.y.batubara@gmail.com} \\
+%   \footnotesize\faLinkedin & \href{https://www.linkedin.com/in/johndoe}{linkedin.com/in/johndoe} \\
+    \footnotesize\faGithub & \href{https://github.com/rybplayer}{github.com/rybplayer} \\
+\end{supertabular}
+
+\switchcolumn*
+
+\section{education}
+
+\header{University of California, San Diego}{2022 -- 2026}
+{Math-Computer Science, Data Science Double Major}{\textbf{3.97 GPA}}
+\begin{itemize}[noitemsep,leftmargin=3.5mm,rightmargin=0mm,topsep=6pt]
+    \item \textbf{Coursework}: Quantum Computing, Recommender Systems, \\ Machine Learning, Abstract Algebra, Graph Theory, Mathematical Statistics, Probability, Numerical Analysis, Game Theory
+    \item \textbf{Readings:} Commutative Algebra, Toric Varieties, Alg. Topology
+    \item \textbf{Activities:} SUMS Math Club Workshops Chair, Origami Club
+\end{itemize}
+
+\section{projects and positions}
+
+\entry{UCSD Historical Enrollment Project}{Sept 2023 -- Present}
+{\href{https://github.com/UCSD-Historical-Enrollment-Data/}{\footnotesize  github.com/UCSD-Historical-Enrollment-Data/ \normalsize}}
+\begin{itemize}[noitemsep,leftmargin=3.5mm,rightmargin=0mm,topsep=6pt]
+  \item Use Rust to scrape enrollment of 40000 UCSD classes/hour using Kubernetes and Tmux on a Digital Ocean Droplet.
+  \item Use Python, Matplotlib, and Github Actions to plot 100s of GBs of enrollment data into 1000s of class plots / month.
+  \item \textbf{Technologies:} Rust for scraping \> Python, Matplotlib for analysis \> DigitalOcean, Tmux, Powershell, Github, for management
+\end{itemize}
+\medskip
+
+\entry{CSE PACE Undergraduate Mentor}{Sept 2023 -- Present}
+{\href{https://pace.ucsd.edu/}{\footnotesize pace.ucsd.edu \normalsize}}
+\begin{itemize}[noitemsep,leftmargin=3.5mm,rightmargin=0mm,topsep=3pt]
+    \item Paid fellowship to work with other mentors in guiding first-year computing undergrads on academic, career, and technical topics.
+    \item Organized food and event logistics for 100s of mentees weekly.
+    \item Worked with UCSD and international faculty to conduct research on the educational climate of CS education, and integrating these latest lessons into student cohort activities.
+    \item \textbf{Skills:} Presentation \> Collaboration \> Mentorship \> Communication
+\end{itemize}
+\medskip
+
+\entry{GPU Computational Artin-Mazur Height}{Jan 2024 -- Present}
+{\href{https://github.com/UCSD-computational-number-theory/GPUFiniteFieldMatrices.jl}{\footnotesize github.com/UCSD-computational-number-theory/GPUFiniteFieldMatrices.jl \normalsize}}
+\begin{itemize}[noitemsep,leftmargin=3.5mm,rightmargin=0mm,topsep=3pt]
+    \item Create first open-source Julia and CUDA.jl library for linear algebra over finite fields, 1000 times faster than previous C implementations.
+    \item Collaboratively optimize Artin-Mazur height computations to \\ parallelize on the GPU using Quasi-F splits and Fedder's Criterion.
+    \item \textbf{Technologies:} Julia, CUDA.jl for coding \> Git, Supabase, Bash for management \> LaTeX for writeup \> Abstract Algebra for optimization
+\end{itemize}
+\medskip
+
+\switchcolumn
+
+\section{skills}
+\begin{supertabular}{rl}
+
+\tableentry{\footnotesize\faCode}
+{Python \> Julia \> C/C++ \> Matlab \> R}{}
+\tableentry{}{SQL \> Kubernetes \> Docker \> Rust}{}
+\tableentry{}{Qiskit \> Regex \> ARM \> Java}{}
+\vspace{0.5em}
+\tableentry{}{Git \> Github \> Bash \> Powershell}{}
+
+\tableentry{\footnotesize\faDatabase}
+{PyTorch \> TensorFlow \> Pandas}{}
+\tableentry{}{Supabase \> PostgreSQL \> ScikitLearn}{}
+\vspace{0.5em}
+\tableentry{}{Seaborn \> Plotly \> Matplotlib}{}
+
+\tableentry{\footnotesize\faChartLine}
+{Machine Learning \> Data Structures}{}
+\vspace{0.5em}
+\tableentry{}{Data Visualization \> Algorithms}{}
+
+\tableentry{\footnotesize\faLanguage}{English \> bilingual proficiency}{}
+\tableentry{}{Indonesian \textperiodcentered{} bilingual proficiency}{}
+\end{supertabular}
+
+\section{articles and talks}
+\begin{supertabular}{rl}
+\tableentry{Data}{Power Outages Analysis}{}
+\tableentry{Science}{AirBnB ML Predictor}{spaceafter}
+
+\tableentry{Math}{The Puzzle Uniqueness Theorem}{}
+\tableentry{}{History of Math Puzzles}{}
+\tableentry{}{Computational Origami}{}
+\tableentry{}{Modern Origami Applications}{}
+\end{supertabular}
+
+\section{achievements}
+\begin{supertabular}{rl}
+\tableentry{2019}{\textbf{Bronze Medal}}{}
+\tableentry{}{World Mathematics Invitational}{}
+\tableentry{}{\emph{Fukuoka, Japan}}{spaceafter}
+
+\tableentry{2018}{\textbf{Bronze Medal}}{}
+\tableentry{}{World Mathematics Invitational}{}
+\tableentry{}{\emph{Seoul, Korea}}{}
+\end{supertabular}
+
+\section{interests}
+\begin{supertabular}{rl}
+\tableentry{Music}{Fingerstyle and Clasical Guitar}{}
+\tableentry{}{Yamaha Certified Guitar Teacher}{spaceafter}
+
+\tableentry{Hobbies}{Video Games, Puzzles, Crafts,}{}
+\tableentry{}{Ink Drawing, PC Making}{spaceafter}
+\end{supertabular}
+
+\end{paracol}
+
+\vspace*{\fill}
+
+\end{document}
