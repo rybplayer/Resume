@@ -16,7 +16,7 @@
 \hypersetup{colorlinks, urlcolor=black, linkcolor=black}
 
 % Geometry
-\geometry{hmargin=1.5cm, vmargin=2cm}
+\geometry{hmargin=1.5cm, vmargin=1.5cm}
 \columnratio{0.62, 0.4}
 \setlength\columnsep{0.05\textwidth}
 \setlength\parindent{0pt}
@@ -33,7 +33,7 @@
 \newcommand{\entry}[3]{{{\textbf{#1}}} \hfill #2 \\ #3 \hfill \hspace{0em}}
 \newcommand{\blurb}[2]{{\textbf{#1}} \hfill #2}
 \newcommand{\tableentry}[3]{\textsc{#1} & #2\expandafter\ifstrequal\expandafter{#3}{}{\\}{\\[6pt]}}
-\renewcommand{\>}{\textperiodcentered{}}
+\renewcommand{\>}{,}
 
 \begin{document}
 
@@ -48,8 +48,9 @@
 
 % Identity card
 \begin{supertabular}{ll}
+    \footnotesize\faHome & \href{https://ryanbatubara.dev}{ryanbatubara.dev} \\
     \footnotesize\faEnvelope & \href{mailto:ryan.y.batubara@gmail.com}{ryan.y.batubara@gmail.com} \\
-%   \footnotesize\faLinkedin & \href{https://www.linkedin.com/in/johndoe}{linkedin.com/in/johndoe} \\
+    \footnotesize\faLinkedin & \href{https://www.linkedin.com/in/ryanbatubara}{linkedin.com/in/ryanbatubara} \\
     \footnotesize\faGithub & \href{https://github.com/rybplayer}{github.com/rybplayer} \\
 \end{supertabular}
 
@@ -88,11 +89,18 @@
 \entry{GPU Artin-Mazur Height Research}{Jan 2024 -- Present}
 {\href{https://github.com/UCSD-computational-number-theory/GPUFiniteFieldMatrices.jl}{\footnotesize github.com/UCSD-computational-number-theory/GPUFiniteFieldMatrices.jl \normalsize}}
 \begin{itemize}[noitemsep,leftmargin=3.5mm,rightmargin=0mm,topsep=3pt]
-    \item Wrote first open-source Julia and CUDA.jl finite field linear algebra library, 1000 times faster tha previous C implementations.
+    \item Wrote first open-source Julia and CUDA.jl finite field linear algebra library, 1000 times faster than previous C implementations.
     \item Collaboratively optimize Artin-Mazur height computations to \\ parallelize on the GPU using Quasi-F splits and Fedder's Criterion.
     \item \textbf{Technologies:} Julia, CUDA.jl for coding \> Git, Supabase, Bash for management \> LaTeX for writeup \> Abstract Algebra for optimization
 \end{itemize}
-\medskip
+
+\section{achievements}
+\begin{flushleft}
+    World Mathematics Invitational
+    \textbf{Bronze} at \emph{Seoul, Korea} in 2018 \\
+    World Mathematics Invitational
+    \textbf{Bronze} at \emph{Fukuoka, Japan} in 2019
+\end{flushleft}
 
 \switchcolumn
 
@@ -100,25 +108,32 @@
 \begin{supertabular}{rl}
 
 \tableentry{\footnotesize\faCode}
-{Python \> Julia \> C/C++ \> Matlab \> R}{}
-\tableentry{}{SQL \> Kubernetes \> Docker \> Rust}{}
-\tableentry{}{Qiskit \> Regex \> ARM \> Java}{}
+{Python\> Julia\> C/C++\> Matlab\> R}{}
+\tableentry{}{SQL\> Kubernetes\> Docker\> Rust}{}
+\tableentry{}{Qiskit\> Regex\> ARM\> Java\> LaTeX}{}
 \vspace{0.5em}
 \tableentry{}{Git \> Github \> Bash \> Powershell}{}
 
 \tableentry{\footnotesize\faDatabase}
 {PyTorch \> TensorFlow \> Pandas}{}
 \tableentry{}{Supabase \> PostgreSQL \> ScikitLearn}{}
+\tableentry{}{NetworkX\> SQLite\> NumPy\> SciPy}{}
 \vspace{0.5em}
 \tableentry{}{Seaborn \> Plotly \> Matplotlib}{}
 
 \tableentry{\footnotesize\faChartLine}
-{Machine Learning \> Data Structures}{}
+{Machine Learning\> Data Structures}{}
+\tableentry{}{Data Visualization\> Algorithms}{}
 \vspace{0.5em}
-\tableentry{}{Data Visualization \> Algorithms}{}
+\tableentry{}{Data Mining\> Recommender Systems}{}
 
-\tableentry{\footnotesize\faLanguage}{English \> bilingual proficiency}{}
-\tableentry{}{Indonesian \textperiodcentered{} bilingual proficiency}{}
+\tableentry{\footnotesize\faGlobe}
+{Astro\> Javascipt\> CSS\> Tailwind}{}
+\vspace{0.5em}
+\tableentry{}{Svelte\> HTML\> mdx\> OpenGraph}{}
+
+\tableentry{\footnotesize\faLanguage}{English\> bilingual proficiency}{}
+\tableentry{}{Indonesian\> bilingual proficiency}{}
 \end{supertabular}
 
 \section{articles and talks}
@@ -134,7 +149,6 @@
 
 \tableentry{Readings}{Post-Quantum Cryptography}{}
 \tableentry{}{Commutative Algebra}{}
-\tableentry{}{Affine Toric Varieties}{}
 \tableentry{}{Algebraic Topology}{spaceafter}
 
 \tableentry{Math}{Puzzle Uniqueness Theorem}{}
@@ -145,14 +159,6 @@
     {\href{https://github.com/rybplayer/Talks}
     {\footnotesize https://github.com/rybplayer/Talks \normalsize}}{}
 \end{supertabular}
-
-\section{achievements}
-\begin{enumerate}
-    \item[2018] World Mathematics Invitational \\
-    \textbf{Bronze Medal} at \emph{Seoul, Korea}
-    \item[2019] World Mathematics Invitational \\
-    \textbf{Bronze Medal} at \emph{Fukuoka, Japan}
-\end{enumerate}
 
 \section{interests}
 \begin{flushleft}
