@@ -1,0 +1,264 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,12pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+\usepackage[sfdefault]{libertine}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-0.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-10pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-5pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-0pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \vspace{-3pt}
+      \textbf{#1} & #2  \\
+      \textit{\footnotesize#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-8pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-10pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 &
+    \footnotesize#2 \\
+    \end{tabular*}\vspace{-10pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Ryan Batubara} \\ \vspace{2pt}
+    \small 657-543-6822 $|$ \href{mailto:ryan.y.batubara@gmail.com}{\underline{ryan.y.batubara@gmail.com}} $|$ 
+    \href{https://www.linkedin.com/in/ryan-batubara/}{\underline{linkedin.com/in/ryan-batubara}} $|$
+    \href{https://github.com/rybplayer}{\underline{github.com/rybplayer}}
+\end{center}
+
+%-----------EDUCATION-----------
+% \vspace{-2em}
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of California, San Diego}{La Jolla, CA}
+      {Mathematics-Computer Science, Data Science Double Major}{Sep. 2022 -- June 2026}
+      \resumeItemListStart
+        \resumeItem{Coursework: Machine Learning, Recommender Systems, Databases, Linear Algebra, Data Structures, Optimization, Algorithms, Graph Theory, Abstract Algebra, Analysis, Statistics, Quantum Computing}
+      \resumeItemListEnd
+    % \resumeSubheading
+    %   {British School Jakarta}{Jakarta, Indonesia}
+    %   {International Baccalaureate Diploma Programme}{Aug 2020 -- May 2022}
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+      {Gani.ai AI Research Intern}{July 2025 -- September 2025}
+      {\href{https://gani.ai}{https://gani.ai}}{Jakarta, Indonesia (Remote)}
+      \resumeItemListStart
+        \resumeItem{Reduced model costs 10x by implementing in-house LLM pipeline with LangChain and AWS SageMaker.}
+        \resumeItem{Finetuned large language models for legal and due diligence generation using RAG, QLoRA, and Unsloth.}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Merah Putih Software Engineering Intern}{September 2025 -- Present}
+      {Merah Putih Ltd.}{Jakarta, Indonesia (Remote)}
+      \resumeItemListStart
+        \resumeItem{Created web dashboard from scratch for 20 management systems with React, Tailwind, TypeScript, and Leaflet.}
+        \resumeItem{Tested and deployed 10 websites for performance and mobile compatibility using AWS, Vitest, Playwright.}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {UCSD Mathematics Undergraduate Researcher}{January 2024 -- Present}
+      {\href{https://github.com/UCSD-computational-number-theory/GPUFiniteFieldMatrices.jl}{https://github.com/UCSD-computational-number-theory/GPUFiniteFieldMatrices.jl}}{San Diego, CA}
+      \resumeItemListStart
+        \resumeItem{Optimized Artin-Mazur height, toric controlled reduction runtimes by 50x using Julia and CUDA on the GPU.}
+        \resumeItem{Developed multiple open-source Julia packages for fast GPU linear algebra beating FLINT using CUDA.}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {HDSI Data Science Undergraduate Researcher}{September 2024 -- June 2025}
+      {\href{https://datadiv.wordpress.com/about-us/}{https://datadiv.wordpress.com/about-us/}}{San Diego, CA}
+      \resumeItemListStart
+        \resumeItem{Worked with Smarr Lab and formerly incarcerated people to explore data on incarceration vs. social policies.}
+        \resumeItem{Gathered GBs of data from US government to visualize and analyse incarceration trends using Python and SQL.}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {CSE PACE Mentor}{Sept 2023 -- Present}
+      {\href{https://pace.ucsd.edu/}{https://pace.ucsd.edu/}}{San Diego, CA}
+      \resumeItemListStart 
+        \resumeItem{Onboarded 100s of first-year CS students weekly on cutting-edge CS topics and academic resources.}
+        \resumeItem{Worked alongside educational researchers on novel pedagogy for incoming CS students, such as \href{https://dl.acm.org/doi/pdf/10.1145/3626252.3630964}{\underline{this paper}}.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+
+    \resumeProjectHeading
+        {\textbf{UCSD Class Scraper and Plotter} $|$ \emph{Python, Rust, Javascript} $|$ \footnotesize\href{https://github.com/UCSD-Historical-Enrollment-Data/}{https://github.com/UCSD-Historical-Enrollment-Data/}}{}
+        \resumeItemListStart
+        \resumeItem{Scraped and plotted 40000 UCSD classes/hour in parallel with Rust, Javascript, Python on Digital Ocean.}
+        \resumeItem{Condensed 100GBs of scraped data into meaningful matplotlib plots for over 10,000 UCSD students.}
+        \resumeItemListEnd
+    \resumeProjectHeading
+        {\textbf{AirBnB Listing Success Predictor} $|$ \emph{Python, Pandas, TensorFlow} $|$ \footnotesize\href{https://rybplayer.github.io/AirBnB-Predictor/}{https://rybplayer.github.io/AirBnB-Predictor/}}{}
+        \resumeItemListStart
+        \resumeItem{Created website with 10s of visuals using Plotly to communicate the key features of successful AirBnB listings.}
+        \resumeItem{Used TensorFlow, SciKit-Learn to implement RNN, CNN machine learning to predict review scores at 0.17 MAE.}
+        \resumeItemListEnd
+    \resumeProjectHeading
+        {\textbf{Step Counting Algorithm Visualization} $|$ \emph{Javascript, D3.js} $|$ \footnotesize\href{https://rybplayer.github.io/StepCounterVisualization/}{https://rybplayer.github.io/StepCounterVisualization/}}{}
+        \resumeItemListStart
+        \resumeItem{Made website with 10s of visuals using D3.js and Javascript to interactively visualize step counting algorithms.}
+        \resumeItem{Used Python to process 100 hours of accelerometer data to evaluate various step counting algorithms.}
+        \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+    \textbf{Languages}{: 
+    Python, Julia, SQL, Javascript, Typescript, C, C++, ARM, Java, R, Rust, MATLAB, LaTeX, Bash, Powershell
+    } \\
+    \textbf{Data Science}{: 
+    ScikitLearn, PyTorch, TensorFlow, AWS SageMaker, Pandas, Numpy, D3.js, Plotly, Matplotlib, Seaborn
+    } \\
+    \textbf{Frameworks and Libraries}{: 
+    React, Next.js, Qiskit, Oscar, Flint, Selenium, CUBLAS, Unsloth, LangChain, CUDA, Vite
+    } \\
+    \textbf{Developer Tools}{: 
+    Git, Docker, Kubernetes, Digital Ocean, Github, Tmux, Jupyter, Swagger, Postman, Bun, Vitest
+    } \\
+    \textbf{Hobbies}{: 
+    Classical Guitar, Puzzles, PC Building, Video Games
+    }
+    }}
+ \end{itemize}
+
+ %
+%-----------ACHIEVEMENTS-----------
+\section{Achievements}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}l}
+        SDSU Big Data Hackaton Best Geospatial Thinker, 2024 & 
+            \footnotesize\href{https://bigdataforsandiego.github.io/}{https://bigdataforsandiego.github.io/} \\
+        World Mathematics Invitational \textbf{Bronze}, \emph{Fukuoka, Japan}, 2019. & 
+            \footnotesize\href{https://www.wminv.org/Subpage/Winners_2019.aspx}{https://www.wminv.org/Subpage/Winners\_2019.aspx} \\
+        World Mathematics Invitational \textbf{Bronze}, \emph{Seoul, Korea}, 2018. & 
+            \footnotesize\href{https://www.wminv.org/Subpage/Winners_2018.aspx}{https://www.wminv.org/Subpage/Winners\_2018.aspx} 
+        % Past Talks: Quantum Computing, Computational Origami &
+        %     \footnotesize\href{https://github.com/rybplayer/Talks}{https://github.com/rybplayer/Talks}
+      \end{tabular*}\vspace{-10pt}
+    }}
+    
+\end{itemize}
+
+
+
+%-------------------------------------------
+\end{document}
